@@ -1,4 +1,4 @@
-export const testComp = {
+export default {
     
     render() {
         return {

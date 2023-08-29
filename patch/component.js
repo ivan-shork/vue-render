@@ -18,7 +18,7 @@ export const mountComponent = (vnode, el, anchor) => {
     const componentOptions = vnode.type
     const children = vnode.children
     
-    const {render = () => null, data, props: propsOption, beforeCreate, created, beforeMount, mounted, beforeUpdate, updated, setup = () => null} = componentOptions
+    let {render = () => null, data, props: propsOption, beforeCreate, created, beforeMount, mounted, beforeUpdate, updated, setup = () => null} = componentOptions
 
     const [props, attrs, events] = resolveProps(propsOption, vnode.props)
 
